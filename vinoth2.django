@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="product-container">
+        <div class="product-image">
+            <img src="product-image.jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+            <h1>Product Name</h1>
+            <p class="price">$49.99</p>
+            <p class="description">
+                This is a great product that will solve all your problems. Features include high-quality material, durability, and an easy-to-use interface.
+            </p>
+            <div class="product-rating">
+                <span>⭐⭐⭐⭐⭐</span> <span>(120 reviews)</span>
+            </div>
+            <p class="availability">In Stock</p>
+
+            <div class="quantity">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+            </div>
+
+            <div class="buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
+
+            <div class="social-sharing">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </main>
+
+    <section class="customer-reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <div class="review-header">
+                <span class="reviewer-name">John Doe</span>
+                <span class="review-rating">⭐⭐⭐⭐</span>
+            </div>
+            <p class="review-text">Great product! Works as expected.</p>
+        </div>
+        <div class="review">
+            <div class="review-header">
+                <span class="reviewer-name">Jane Smith</span>
+                <span class="review-rating">⭐⭐⭐⭐⭐</span>
+            </div>
+            <p class="review-text">I love this! Highly recommend it to everyone.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My E-Commerce Site</p>
+    </footer>
+</body>
+</html>
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Product Container */
+.product-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.product-image img {
+    width: 400px;
+    height: auto;
+}
+
+.product-details {
+    margin-left: 20px;
+    max-width: 500px;
+}
+
+.product-details h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.product-details .price {
+    font-size: 1.5em;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.product-details .description {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.product-details .product-rating {
+    margin-bottom: 10px;
+}
+
+.product-details .availability {
+    font-weight: bold;
+    color: green;
+    margin-bottom: 20px;
+}
+
+.quantity {
+    margin-bottom: 20px;
+}
+
+.quantity label {
+    font-weight: bold;
+}
+
+.quantity input {
+    width: 60px;
+    padding: 5px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.add-to-cart, .buy-now {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.add-to-cart {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.buy-now {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.social-sharing a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.social-sharing a:hover {
+    text-decoration: underline;
+}
+
+/* Customer Reviews Section */
+.customer-reviews {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.customer-reviews h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.review {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.review-header {
+    font-weight: bold;
+}
+
+.review-rating {
+    color: #f0ad4e;
+    margin-left: 10px;
+}
+
+.review-text {
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
